@@ -17,7 +17,7 @@
                 <li><a href="#contact"><h3>contact</h3></a></li>
             </ul>
         </nav>
-        <div><img src="/asset/ic.png" alt="il s'agit de l'icône de la page"></div>
+        <div><img src="/asset/coder.png" alt="il s'agit de moi"></div>
         <hr> <!--tirer un trait-->
         <br>
     </header> 
@@ -29,19 +29,20 @@
             </article>
             <figure>
                 <img src="/asset/person.png" height="150" alt="this is an image of a cool guy"> <!--insertion d'une image-->
-                <video controls src="/asset/debbuging.mp4" type ="video/mp4" height="150"></video> <!--insertion d'une video-->
+                <video controls autoplay loop src="/asset/debbuging.mp4" type ="video/mp4" height="150"></video> <!--insertion d'une video-->
             </figure>
         </section>
         <hr>
         <br> <!--saut de ligne-->
         <div>
+            
             <h2 id ="work">work</h2>
             <article>
                 <p>As a software engineer, I have had the opportunity to contribute to various significant projects. My experience includes designing and developing web applications using modern frameworks such as React and Angular, as well as building robust backends with Node.js, Python, and Java. I have also worked on integrating third-party services via REST and GraphQL APIs, ensuring smooth and efficient communication between different system components. My ability to understand user needs and translate them into concrete technical solutions allows me to deliver high-quality products that meet client expectations.</p>
          </article>
          <figure>
             <img src="/asset/study.png" height="150" alt="this an image of a guy who woked in hus life">
-            <video controls src="/asset/video.mp4" type="video/mp4" height="150"></video>
+            <video controls autoplay loop src="/asset/video.mp4" type="video/mp4" height="150"></video>
          </figure>
          
         </div>
@@ -80,7 +81,7 @@
             </i>
            </ul>
         </div>
-        <>
+        
             <h3>Skills</h3>
             <ul>
                
@@ -92,7 +93,7 @@
                 <li>Methodologies: Agile, Scrum, DevOps</li>
                 </i>
             </ul>
-            <figure><img src="/asset/cool.gif" height="200" alt="this is a cool gif"></figure>
+            <figure><video controls autoplay loop src="/asset/co.mp4" height="200" type = video/mp4></video></figure>
         
         </div>
         <hr>
@@ -101,6 +102,32 @@
     <!--bas de la page-->
     <footer>
         <h3 id="contact">contact</h3>
+        
+        
+        <!--creation d'un fromulaire afin que l'utilisateur puisse mettre ses informations-->
+        
+        <form action="/submit-form">
+            <label for="name">name</label>
+            <input type="text" id ="name" placeholder="enter your name">
+            <label for="phoneNumber">number</label>
+            <input type="text" id="phoneNumber" placeholder="enter your number" maxlength="11">
+            <label for="birthday">birthday</label>
+            <input type="date" id="birthday">
+            <textarea cols="40" placeholder="your message"></textarea>
+            <select>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <button>subbmit</button>
+           
+                
+                
+        </form>
+       <audio controls src="/asset/Headlands - National Sweetheart.mp3" type="mpeg/mp3"></audio>
+        <p><i><small>listen to music while  you are typing your informations it will help you <del>calm</del></small></i></p>
+        <i><small>if you want to know more about software engineering <a href="https://www.mtu.edu/cs/undergraduate/software/what/#:~:text=Software%20engineering%20is%20the%20branch,and%20maintenance%20of%20software%20applications." target="_blank" title="going to another website"><button>click here</button></a></small></i>
+    
+        <p>contact me</p>
         <!--creation d'un tableau-->
         <table border ="5">
             <thead>
@@ -118,28 +145,8 @@
                 
             </tbody>
         </table>
-        
-        <!--creation d'un fromulaire afin que l'utilisateur puisse mettre ses informations-->
-        <p> your contact</p>
-        <form action="/submit-form">
-            <label for="name">name</label>
-            <input type="text" id ="name" placeholder="enter your name">
-            <label for="phoneNumber">number</label>
-            <input type="text" id="phoneNumber" placeholder="enter your number" maxlength="11">
-            <label for="birthday">birthday</label>
-            <input type="date" id="birthday">
-            <select>
-                <option value="male">male</option>
-                <option value="female">female</option>
-            </select>
-            <button>subbmit</button>
-           
-                
-                
-        </form>
-       <audio controls src="/asset/Headlands - National Sweetheart.mp3" type="mpeg/mp3"></audio>
-        <p><i><small>listen to music while  you are typing your informations it will help you <del>calm</del></small></i></p>
-        <i><small>if you want to know more about software engineering <a href="https://www.mtu.edu/cs/undergraduate/software/what/#:~:text=Software%20engineering%20is%20the%20branch,and%20maintenance%20of%20software%20applications." target="_blank" title="going to another website"><button>click here</button></a></small></i>
+    
+        &copy; Mon portfolio, tout droit réservé
     </footer>
 </body>
 </html>
