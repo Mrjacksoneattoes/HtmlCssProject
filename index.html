@@ -5,67 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="icon" href="/asset/ic.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page">
     <header> 
-        <h1>hello and welcome to my portfolio</h1>
+        <h1 id="title-web">My portfolio</h1>
         <nav> <!--creation de liste-->
             <ul type = "square">
-                <li><a href="#about"><h3>about</h3></a></li> <!--faire en sorte que quand je clique sa me redirige dans la partie demandée-->
-                <li><a href="#work"><h3>work</h3></a></li>
-                <li><a href="#resume"><h3>resume</h3></a></li>
-                <li><a href="#contact"><h3>contact</h3></a></li>
+                <div class="link-navbar">
+                    <li><a href="#about">about</a></li> 
+                 <li><a href="#work">work</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+            
+                </div>
+                
             </ul>
         </nav>
-        <div><img src="/asset/coder.png" alt="il s'agit de moi"></div>
-        <hr> <!--tirer un trait-->
+        <img id="image-moi" src="/asset/coder.png" height="150" alt="il s'agit de moi">
         <br>
     </header> 
     <main>
-        <section>
-            <h2 id ="about">about</h2>
+        <section class="abt">
+            <h2 id ="about">ABOUT</h2>
             <article>
                 <p>My name is Badis, and I am a software engineer passionate about innovation and solving complex problems. With several years of experience in software development, I have gained deep expertise in designing and implementing robust and scalable software solutions. My professional journey has allowed me to work on a variety of projects, ranging from web and mobile applications to enterprise systems, using the latest technologies. I am always seeking new opportunities to learn and improve, aiming to add value to the projects I work on</p>
             </article>
             <figure>
                 <img src="/asset/person.png" height="150" alt="this is an image of a cool guy"> <!--insertion d'une image-->
-                <video controls autoplay loop src="/asset/debbuging.mp4" type ="video/mp4" height="150"></video> <!--insertion d'une video-->
+                <video controls muted autoplay loop src="/asset/debbuging.mp4" type ="video/mp4" height="150"></video> <!--insertion d'une video-->
             </figure>
         </section>
-        <hr>
+        
         <br> <!--saut de ligne-->
-        <div>
+        <div class="work-portfolio">
             
-            <h2 id ="work">work</h2>
+            <h2 id ="work">WORK</h2>
             <article>
                 <p>As a software engineer, I have had the opportunity to contribute to various significant projects. My experience includes designing and developing web applications using modern frameworks such as React and Angular, as well as building robust backends with Node.js, Python, and Java. I have also worked on integrating third-party services via REST and GraphQL APIs, ensuring smooth and efficient communication between different system components. My ability to understand user needs and translate them into concrete technical solutions allows me to deliver high-quality products that meet client expectations.</p>
          </article>
          <figure>
             <img src="/asset/study.png" height="150" alt="this an image of a guy who woked in hus life">
-            <video controls autoplay loop src="/asset/video.mp4" type="video/mp4" height="150"></video>
+            <video controls muted autoplay loop src="/asset/video.mp4" type="video/mp4" height="150"></video>
          </figure>
          
         </div>
-        <hr>
+        
         <br>
-        <div> <!--creation d'une div pour faire un cv-->
-            <h2 id ="resume">resume</h2>
-        </div>
-        <div>
-            <h3>Senior Software Engineer | XYZ Company | 2020 - Present</h3>
-           <ul>
-           <i>
-            <li>Designed and developed web and mobile applications</li>
-            <li>Collaborated with cross-functional teams to define technical specifications.</li>
-            <li>Implemented REST and GraphQL APIs for third-party service integration.</li>
+        <div class="re-portfolio"> <!--creation d'une div pour faire un cv-->
+            <h2  id ="resume" style="text-decoration:underline;">RESUME</h2>
+        
+            <div>
+                <h3>Senior Software Engineer | XYZ Company | 2020 - Present</h3>
+            <ul>
+            <i>
+                <li>Designed and developed web and mobile applications</li>
+                <li>Collaborated with cross-functional teams to define technical specifications.</li>
+                <li>Implemented REST and GraphQL APIs for third-party service integration.</li>
            </i>
            </ul>
         </div>
         <div>
-           <h3>Software Engineer | ABC Company | 2017 - 2020</h3>
-           <ul>
+            <h3>Software Engineer | ABC Company | 2017 - 2020</h3>
+            <ul>
             <i>
-                <li>Developed robust and scalable backend systems.</li>
+            <li>Developed robust and scalable backend systems.</li>
             <li>Participated in continuous improvement of development processes.</li>
             <li>Trained and mentored new team members</li>
             </i>
@@ -93,8 +97,9 @@
                 <li>Methodologies: Agile, Scrum, DevOps</li>
                 </i>
             </ul>
-            <figure><video controls autoplay loop src="/asset/co.mp4" height="200" type = video/mp4></video></figure>
+            <figure><video controls muted autoplay loop src="/asset/co.mp4" height="200" type = video/mp4></video></figure>
         
+        </div>
         </div>
         <hr>
         <br>
@@ -109,20 +114,26 @@
         <form action="/submit-form">
             <label for="name">name</label>
             <input type="text" id ="name" placeholder="enter your name">
+            <br>
             <label for="phoneNumber">number</label>
             <input type="text" id="phoneNumber" placeholder="enter your number" maxlength="11">
+            <br>
             <label for="birthday">birthday</label>
             <input type="date" id="birthday">
+            <br>
             <textarea cols="40" placeholder="your message"></textarea>
+            <br>
             <select>
                 <option value="male">male</option>
                 <option value="female">female</option>
             </select>
+            <br>
             <button>subbmit</button>
            
                 
                 
         </form>
+        <br>
        <audio controls src="/asset/Headlands - National Sweetheart.mp3" type="mpeg/mp3"></audio>
         <p><i><small>listen to music while  you are typing your informations it will help you <del>calm</del></small></i></p>
         <i><small>if you want to know more about software engineering <a href="https://www.mtu.edu/cs/undergraduate/software/what/#:~:text=Software%20engineering%20is%20the%20branch,and%20maintenance%20of%20software%20applications." target="_blank" title="going to another website"><button>click here</button></a></small></i>
