@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="icon" href="/asset/ic.png" type="image/x-icon">
+</head>
+<body>
+    <header> 
+        <h1>hello and welcome to my portfolio</h1>
+        <nav> <!--creation de liste-->
+            <ul type = "square">
+                <li><a href="#about"><h3>about</h3></a></li> <!--faire en sorte que quand je clique sa me redirige dans la partie demandée-->
+                <li><a href="#work"><h3>work</h3></a></li>
+                <li><a href="#resume"><h3>resume</h3></a></li>
+                <li><a href="#contact"><h3>contact</h3></a></li>
+            </ul>
+        </nav>
+        <div><img src="/asset/ic.png" alt="il s'agit de l'icône de la page"></div>
+        <hr> <!--tirer un trait-->
+        <br>
+    </header> 
+    <main>
+        <section>
+            <h2 id ="about">about</h2>
+            <article>
+                <p>My name is Badis, and I am a software engineer passionate about innovation and solving complex problems. With several years of experience in software development, I have gained deep expertise in designing and implementing robust and scalable software solutions. My professional journey has allowed me to work on a variety of projects, ranging from web and mobile applications to enterprise systems, using the latest technologies. I am always seeking new opportunities to learn and improve, aiming to add value to the projects I work on</p>
+            </article>
+            <figure>
+                <img src="/asset/person.png" height="150" alt="this is an image of a cool guy"> <!--insertion d'une image-->
+                <video controls src="/asset/debbuging.mp4" type ="video/mp4" height="150"></video> <!--insertion d'une video-->
+            </figure>
+        </section>
+        <hr>
+        <br> <!--saut de ligne-->
+        <div>
+            <h2 id ="work">work</h2>
+            <article>
+                <p>As a software engineer, I have had the opportunity to contribute to various significant projects. My experience includes designing and developing web applications using modern frameworks such as React and Angular, as well as building robust backends with Node.js, Python, and Java. I have also worked on integrating third-party services via REST and GraphQL APIs, ensuring smooth and efficient communication between different system components. My ability to understand user needs and translate them into concrete technical solutions allows me to deliver high-quality products that meet client expectations.</p>
+         </article>
+         <figure>
+            <img src="/asset/study.png" height="150" alt="this an image of a guy who woked in hus life">
+            <video controls src="/asset/video.mp4" type="video/mp4" height="150"></video>
+         </figure>
+         
+        </div>
+        <hr>
+        <br>
+        <div> <!--creation d'une div pour faire un cv-->
+            <h2 id ="resume">resume</h2>
+            <h3>Senior Software Engineer | XYZ Company | 2020 - Present</h3>
+           <ul>
+           <i>
+            <li>Designed and developed web and mobile applications</li>
+            <li>Collaborated with cross-functional teams to define technical specifications.</li>
+            <li>Implemented REST and GraphQL APIs for third-party service integration.</li>
+           </i>
+           </ul>
+           <h3>Software Engineer | ABC Company | 2017 - 2020</h3>
+           <ul>
+            <i>
+                <li>Developed robust and scalable backend systems.</li>
+            <li>Participated in continuous improvement of development processes.</li>
+            <li>Trained and mentored new team members</li>
+            </i>
+           </ul>
+           <h3>Education</h3>
+           <ul>
+            <i>
+                <li>Master’s in Computer Science | University of Technology</li>
+            <li>Specialization in software engineering.</li>
+            <li>Research projects on modern software architectures.</li>
+            </i>
+
+            <h3>Skills</h3>
+            <ul>
+               
+                <i>
+                    <li>Programming Languages: JavaScript, Python, Java, C++</li>
+                <li>Frameworks: React, Angular, Node.js, Django</li>
+                <li>Development Tools: Git, Docker, Jenkins</li>
+                <li>Databases: MySQL, PostgreSQL, MongoDB</li>
+                <li>Methodologies: Agile, Scrum, DevOps</li>
+                </i>
+            </ul>
+            <figure><img src="/asset/cool.gif" height="200" alt="this is a cool gif"></figure>
+           </ul>
+        </div>
+        <hr>
+        <br>
+    </main>
+    <!--bas de la page-->
+    <footer>
+        <h3 id="contact">contact</h3>
+        <!--creation d'un tableau-->
+        <table border ="5">
+            <thead>
+                <tr>
+                    <th>phone number</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+21650690329</td>
+                    <td>bedis.moat24@hotmail.com</td>
+                </tr>
+
+                
+            </tbody>
+        </table>
+        
+        <!--creation d'un fromulaire afin que l'utilisateur puisse mettre ses informations-->
+        <p> your contact</p>
+        <form action="/submit-form">
+            <label for="name">name</label>
+            <input type="text" id ="name" placeholder="enter your name">
+            <label for="phoneNumber">number</label>
+            <input type="text" id="phoneNumber" placeholder="eter your number" maxlength="11">
+            <label for="birthday">birthday</label>
+            <input type="date" id="birthday">
+            <select>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <button>subbmit</button>
+           
+                
+                
+        </form>
+       <audio controls src="/asset/Headlands - National Sweetheart.mp3" type="mpeg/mp3"></audio>
+        <p><i><small>listen to music while  you are typing your informations it will help you <del>calm</del></small></i></p>
+        <i><small>if you want to know more about software engineering <a href="https://www.mtu.edu/cs/undergraduate/software/what/#:~:text=Software%20engineering%20is%20the%20branch,and%20maintenance%20of%20software%20applications." target="_blank" title="going to another website"><button>click here</button></a></small></i>
+    </footer>
+</body>
+</html>
