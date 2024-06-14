@@ -1,15 +1,16 @@
 .page{
-    background-color: blueviolet;
+    background-color: burlywood;
     color: white;
     font-size: 20px;
     font-family: 'Playfair Display';
     border-radius: -15%;
 }
+
 .head{
-    background-color: #FFC080;
+    background-color:#7A2C33;
     border-radius: -10%;
-    box-shadow: 5px 5px red;
-    border:5px solid white;
+    box-shadow: 15px 15px rgb(110, 132, 184);
+    border:10px solid white ;
     width: 80%;
     margin: 0 auto;
 }
@@ -51,11 +52,11 @@
     
 }
 .link-navbar{
-    background-color: violet;
+    background-color: greenyellow;
     text-align: center;
     border-radius: 20%;
-    border: 1px solid blue;
-    box-shadow: 5px 5px 5px blue;
+    border:3px solid red;
+    box-shadow: 5px 5px  #FF9900;
     padding: 5%;
     width: 850px;
     margin: 0 auto;
@@ -66,8 +67,8 @@
     
     text-decoration: none;
     color: black;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #F7ECE1;
+    color: black;
     border-radius: 15%;
     border: 3px solid blue;
     box-shadow: 5px 5px red;
@@ -75,6 +76,7 @@
     font-size: 20pxpx;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    margin: -3%;
 }
 .link-navbar :hover a{
     
@@ -92,12 +94,12 @@
     
 }
 #title-web{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    color: blue;
-    text-shadow: 4px 4px  red;
+    color: #F7ECE1;
+    text-shadow: 5px 5px  black;
     padding: 10 px;
     animation: zoom 1s ease-in-out;
 }
@@ -112,7 +114,6 @@
 
 #image-moi{
     height: 300px;
-    border: 2px solid #000;
     border-radius: 50%;
     height: 100px;
     position: absolute; 
@@ -121,7 +122,7 @@
     margin-left: 10%;
     top: 0;
     z-index: 10;
-    border: 3px solid red;
+    border: 2px solid #7A2C33;
     animation: zoum 1s ease-in-out;
     transition: transform .2s ease-in-out;
     margin-top: 3%;   
@@ -164,8 +165,8 @@
 .abt img{
     height: 180px;
     border-radius: 20%;
-    border: solid white;
-    box-shadow: 5px 5px;    
+    border: 3px solid yellow;
+    box-shadow: 10px 10px 10px black;    
     margin-bottom: 15%;
 }
 
@@ -173,17 +174,14 @@
 .abt video{
     height: 180px;
     border-radius: 20%;
-    border: solid greenyellow;
-    box-shadow: 5px 5px;
-    transition: transform .5s ease;
+    border: 3px solid yellow;
+    box-shadow: 10px 10px 10px black;
+    transition: transform .5s ease-in-out;
     
 }
 .abt :hover video{
     transform: scale(1.1);
 }
-
-
-
 
 .work-portfolio{
     font-weight: lighter;
@@ -200,9 +198,7 @@
     width: 850px;
     margin-left: auto;
     margin-right: 0;
-    
-   
-    
+        
 }
 #work{
     text-decoration: underline blueviolet;
@@ -211,10 +207,9 @@
 .work-portfolio img{
     height: 180px;
     border-radius: 30%;
-    border: 3px solid greenyellow;
-    box-shadow: 0 0 30px rgba(255, 225, 225, 0.5); 
-    box-shadow: 10px 10px 10px ;  
-    transition: transform .5s ease;
+    border: 3px solid blue;
+    box-shadow: 10px 10px 10px black;  
+    transition: transform .3s ease-in-out;
     margin-bottom: 15%;
 }
 .work-portfolio :hover img{
@@ -223,10 +218,10 @@
 .work-portfolio video{
     height: 180px;
     border-radius: 15%;
-    border: 2px solid blueviolet;
+    border: 2px solid blue;
     box-shadow: 0 0 30px rgba(255, 225, 225, 0.5);
-    box-shadow: 10px 10px 10px;
-    transition: transform .5s ease;
+    box-shadow: 10px 10px 10px black;
+    transition: transform .3s ease-in-out;
 
 }
 .work-portfolio :hover video{
@@ -262,7 +257,7 @@ footer{
     padding: 3%;
     border: 5px solid orange ;
     border-bottom: 3px solid greenyellow;
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 7px 7px  black;
     font-weight: lighter;
     width: 1000px;
     margin: 0 auto;
