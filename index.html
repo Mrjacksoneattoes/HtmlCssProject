@@ -108,28 +108,25 @@
         <br>
     </main>
     <!--bas de la page-->
-    <footer>
+    <footer class="footer">
         <h3 id="contact">contact</h3>
         
         
         <!--creation d'un fromulaire afin que l'utilisateur puisse mettre ses informations-->
         
-        <form action="/submit-form">
+        <form  action="/submit-form">
             <label for="name">name</label>
             <input type="text" id ="name" placeholder="enter your name">
             <br>
             <label for="phoneNumber">number</label>
-            <input type="text" id="phoneNumber" placeholder="enter your number" maxlength="11">
+            <input type="text" id="phoneNumber" placeholder="enter your number" maxlength="12">
             <br>
             <label for="birthday">birthday</label>
             <input type="date" id="birthday">
             <br>
-            <textarea cols="40" placeholder="your message"></textarea>
+            <textarea id="message" cols="40" placeholder="your message"></textarea>
             <br>
-            <select>
-                <option value="male">male</option>
-                <option value="female">female</option>
-            </select>
+        
             <br>
             <button>subbmit</button>
            
