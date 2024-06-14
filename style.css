@@ -36,7 +36,15 @@
     border-radius: 15%;
     border: 5px solid green;
     box-shadow: 5px 5px black;
+    color: black;
+    transition: background-color 0.5s, transform .3s ease;
 
+}
+#passion:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    border: 5px solid greenyellow;
 }
 
 #coding{
@@ -48,8 +56,14 @@
     border-radius: 15%;
     border: 5px solid red;
     box-shadow: 5px 5px black;
-    
-    
+    transition: background-color 0.5s, transform .3s;
+
+}
+#coding:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    border: 5px solid blue;
 }
 .link-navbar{
     background-color: greenyellow;
@@ -145,14 +159,19 @@
     padding: 3%;
     margin-top: 3%;
     border: 1px solid black;
-    border-bottom: 1px solid red;
+    border-bottom: 4px solid blue;
     box-shadow: 5px 5px black ;
     display: block;
     text-align: center;
     width: 850px;
     margin-left: 0 auto;
     position: relative;
-       
+    transition: background-color 0.2s, transform 0.7s ease;
+}
+.abt:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom, yellow, green);
+    text-shadow: 1px 1px green;
 }
 
 
@@ -165,40 +184,55 @@
 .abt img{
     height: 180px;
     border-radius: 20%;
-    border: 3px solid yellow;
+    border: 5px solid green;
     box-shadow: 10px 10px 10px black;    
     margin-bottom: 15%;
+    transition: transform ease;
+}
+.abt :hover img{
+    transform: scale(1.1);
+    border: 5px solid greenyellow;
 }
 
 
 .abt video{
     height: 180px;
     border-radius: 20%;
-    border: 3px solid yellow;
+    border: 5px solid green;
     box-shadow: 10px 10px 10px black;
-    transition: transform .5s ease-in-out;
+    transition: transform .5s ease;
     
 }
 .abt :hover video{
     transform: scale(1.1);
+    border: 5px solid greenyellow;
 }
 
 .work-portfolio{
-    font-weight: lighter;
     font-family: 'Playfair Display';
+    font-weight: lighter;
     border-radius: 15%;
     border: 1px solid black;
-    border-bottom: 2px solid greenyellow;
-    text-shadow: 1px 1px 1px red;
-    box-shadow: 5px 5px;
+    border-bottom: 4px solid greenyellow;
+    text-shadow: 1px 1px 1px  red;
+    color: black;
+    box-shadow: 5px 5px black;
     display: block;
     text-align: center;
     padding: 1%;
     margin-top: 3%;
     width: 850px;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 0; 
+    transition: background-color 0.2s, transform 0.7s ease;
         
+}
+.work-portfolio:hover{
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom, rgb(248, 44, 91), red);
+    margin-bottom: 1%;
+    color:white;
+    text-shadow: 1px 1px 1px red;
 }
 #work{
     text-decoration: underline blueviolet;
@@ -207,7 +241,7 @@
 .work-portfolio img{
     height: 180px;
     border-radius: 30%;
-    border: 3px solid blue;
+    border: 5px solid blue;
     box-shadow: 10px 10px 10px black;  
     transition: transform .3s ease-in-out;
     margin-bottom: 15%;
@@ -218,7 +252,7 @@
 .work-portfolio video{
     height: 180px;
     border-radius: 15%;
-    border: 2px solid blue;
+    border: 5px solid blue;
     box-shadow: 0 0 30px rgba(255, 225, 225, 0.5);
     box-shadow: 10px 10px 10px black;
     transition: transform .3s ease-in-out;
@@ -318,10 +352,11 @@ form input{
     font-family: 'Playfair Display';
     border-radius: 5%;
     font-size: 25px;
+    font-weight: 100px;
     margin: 15px;
     border: 1px solid red;
     box-shadow: 3px 3px black;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 form label {
@@ -332,6 +367,7 @@ form label {
     box-shadow: 5px 5px  black;
     background-color: white;
     color: black;
+    margin-left: 5%;
     
 }
 
