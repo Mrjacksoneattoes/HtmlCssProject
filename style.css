@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License), 
+    font-weight: 200;
+
+}
+
 .page{
     background-image: linear-gradient(to right, burlywood 50%, blueviolet 50%);
     color: white;
     font-size: 20px;
-    font-family: 'Playfair Display';
+    font-family: 'Roboto', sans-serif;
     border-radius: -15%;
 }
 
@@ -572,10 +583,10 @@ tbody tr:nth-child(even) {
 .copy{
     width: 250px;
     margin: 0 auto;
-    border-radius: 15%;
+    border-radius: 20%;
     border: 3px solid #007BFF;
     box-shadow: 10 px 10px white;
     background-color: black;
-    box-shadow: 0 0 100px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px black;
     margin-top: 2%;
 }
